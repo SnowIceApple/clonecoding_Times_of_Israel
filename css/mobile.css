@@ -1,0 +1,117 @@
+@media all and (max-width: 1190px){
+
+    .container{
+        width: 980px;
+    }
+
+    .floor1 > li{
+        margin: 6px 0;
+    }
+
+    .main_search_box input{
+        width: 860px;
+    }
+
+    .left_aside_view{
+        display: none;
+    }
+
+    .article_container_floor2{
+        padding-left: 0px;
+    }
+
+    .article_container_floor3{
+        padding-left: 0px;
+    }
+
+    .sub_article_container{
+        width: 640px;
+    }
+
+    .article_full_2.article_container_black .article_txt{
+        width: 200px;
+    }
+
+    .article_full_2.article_container_black .article_pic{
+        width: 380px;
+    }
+
+    .article_type_list.list_2 ul li{
+        width: 290px;
+    }
+
+    .article_type_list.list_3 ul li{
+        width: 200px;
+    }
+
+    .ac_color .article_type_list.list_3 ul li{
+        width: 185px;
+    }
+
+    .article_full_2 .article_type_list ul li .atl_pic{
+        display: none;
+    }
+
+    .article_full_2 .article_type_list ul li .atl_desc{
+        padding-left: 0;
+    }
+
+    .article_full_2 .article_txt{
+        width: 100%;
+    }
+
+    .article_full_2 .article_pic{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .article_full_2.ac_color .article_pic{
+        width: 100%;
+    }
+
+    .article_full_2.article_container_black .article_txt{
+        width: 100%;
+    }
+
+    .slide_article_box .slide_box{
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .swiper-button-prev.sb_type1{
+        left: 0px !important;
+    }
+
+    .swiper-button-next.sb_type1{
+        right: 0px !important;
+    }
+
+    .main_slide_type2:hover .swiper-button-prev.sb_type1{
+        left: 0px !important;
+    }
+
+    .main_slide_type2:hover .swiper-button-next.sb_type1{
+        right: 0px !important;
+    }
+
+
+    .back_to_top{
+        max-width: 980px;
+    }
+
+}
+
+@media all and (max-width: 1080px){
+
+    .logo a img{
+        width: 390px;
+    }
+
+    .main_war_alert{
+        top: 60px;
+    }
+
+    .header_top{
+        padding-bottom: 40px;
+    }
+}
