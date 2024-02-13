@@ -176,28 +176,51 @@ $(document).ready(function(){
       $(window).on('scroll', function(e){
         var scrollY1 = $(this).scrollTop();
         var offsetbottom1 = $('.article_container_floor2.acf2_2').offset().top + $('.article_container_floor2.acf2_2').outerHeight();
-        var rav_2_trigger = $(window).innerHeight();
 
-        if($(window).scrollTop() > $('.hamas_atrocities').offset().top - 250){
+        var rav_2_trigger = $('.hamas_atrocities').offset().top - $(window).height(); 
+
+        if($(window).scrollTop() > rav_2_trigger){
           $('.right_aside_view.rav_2').addClass('sticky_active');
         }
 
-        if(scrollY1 > lastScroll1 && $(window).scrollTop() < $('.acf2_2').offset().top + 950){
+        // if(scrollY1 > lastScroll1 && $(window).scrollTop() < $('.acf2_2').offset().top + 950){
+        //   $('.right_aside_view.rav_2').removeClass('sticky_active');
+        // }
+
+        if(scrollY1 > lastScroll1 && $(window).scrollTop() < rav_2_trigger){
           $('.right_aside_view.rav_2').removeClass('sticky_active');
         }
 
         var rah_1 = $('.article_container_floor2.type2').outerHeight();
         var rah_2 = $('.right_aside.ra_2').outerHeight();
 
-        if($(window).scrollTop() > $('.article_container_floor3.acf3_2').offset().top - 950){
+        // if($(window).scrollTop() > $('.article_container_floor3.acf3_2').offset().top - 950){
+        //   $('.right_aside_view.rav_2').removeClass('sticky_active');
+        //   $('.right_aside.ra_2').css({'margin-top': rah_1 - rah_2 + 'px'});
+        // }
+
+        var scroll_Bottom = $(document).height() - $(window).height() - $(window).scrollTop();
+
+        var divOffset = $(".article_container_floor2.acf2_2").offset().top;
+        var divHeight = $(".article_container_floor2.acf2_2").outerHeight();
+        
+        var windowHeight = $(window).outerHeight();
+        var scrollTop = $(window).scrollTop();
+        
+        var trigger_bottom = divOffset + divHeight - (windowHeight + scrollTop);
+
+        console.log(scroll_Bottom);
+        console.log(trigger_bottom);
+
+
+        if(trigger_bottom < 0){
           $('.right_aside_view.rav_2').removeClass('sticky_active');
           $('.right_aside.ra_2').css({'margin-top': rah_1 - rah_2 + 'px'});
         }
+        
         else{
           $('.right_aside.ra_2').css({'margin-top': 0 + 'px'});
         }
-
-        // console.log(rav_2_trigger);
 
         scrollY1 = lastScroll1;
       });
