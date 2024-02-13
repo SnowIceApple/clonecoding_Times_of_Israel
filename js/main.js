@@ -187,7 +187,7 @@ $(document).ready(function(){
         //   $('.right_aside_view.rav_2').removeClass('sticky_active');
         // }
 
-        if(scrollY1 > lastScroll1 && $(window).scrollTop() < rav_2_trigger){
+        if(scrollY1 > lastScroll1 && $(window).scrollTop() < $('.article_container_floor2.acf2_2').offset().top){
           $('.right_aside_view.rav_2').removeClass('sticky_active');
         }
 
