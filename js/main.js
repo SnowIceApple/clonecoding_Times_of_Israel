@@ -209,8 +209,8 @@ $(document).ready(function(){
         
         var trigger_bottom = divOffset + divHeight - (windowHeight + scrollTop);
 
-        console.log(scroll_Bottom);
-        console.log(trigger_bottom);
+        // console.log(scroll_Bottom);
+        // console.log(trigger_bottom);
 
 
         if(trigger_bottom < 0){
