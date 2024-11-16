@@ -1,4 +1,4 @@
-# 타임즈 오브 이스라엘 클론코딩
+# Times of Israel 클론코딩
 
 ## Link
 
