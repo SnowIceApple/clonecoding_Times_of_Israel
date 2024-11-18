@@ -1,4 +1,4 @@
-# Times of Israel 클론코딩
+# Times of Israel clone
 
 ## Link
 
